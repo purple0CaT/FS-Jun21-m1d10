@@ -170,3 +170,12 @@ document.querySelector('.ulItem').addEventListener('keypress', function (e) {
         this.value = ''
     }
 })
+
+console.log("\n <==  Deleting the li ==> \n")
+
+function emptyLi(){
+    let ul = document.querySelectorAll('ul li')
+    for ( let li of ul){
+        li.remove()
+    }
+}
