@@ -51,7 +51,7 @@ console.log(sumArray)
 
 console.log("\n <== Longest of Arrays  ==> \n")
 
-const shortArr = [1,4,5]
+const shortArr = [1,30,5,10]
 const longArr = [4,2,6,2,8,9]
 
 function compare(a,b){
@@ -62,3 +62,25 @@ function compare(a,b){
     }
 }
 compare(shortArr, longArr)
+
+console.log("\n <==  Higher sum of values  ==> \n")
+
+function sumCompare(a,b){
+    let first = 0
+    let second = 0
+
+    for (let num of a){
+        first += num
+    }
+
+    for (let num of b){
+        second += num
+    }
+
+    if (first<second){
+        console.log(b)
+    } else {
+        console.log(a)
+    }
+}
+sumCompare(shortArr, longArr)
