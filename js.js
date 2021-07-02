@@ -188,3 +188,10 @@ for( let alr of alertPop){
         console.log(alr.href)
     })
 }
+// IMG hide
+function hideIMG(){
+    let img = document.querySelectorAll('img')
+    for(let im of img){
+        im.style.display = 'none'
+    }
+}
