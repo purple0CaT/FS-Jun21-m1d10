@@ -144,7 +144,7 @@ function addClass(){
     }
 }
 
-console.log("\n <==  Add link==> \n")
+console.log("\n <==  Add link background ==> \n")
 
 function addLink(){
     const allLinks = document.querySelectorAll('td a')
@@ -153,4 +153,20 @@ function addLink(){
     }
 }
 
-console.log("\n <==  Add link==> \n")
+console.log("\n <==  Page loaded ==> \n")
+
+window.onload = ()=>{
+    alert('Page loaded!')
+}
+
+console.log("\n <==  Page loaded ==> \n")
+
+document.querySelector('.ulItem').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        let ul = document.getElementById('unlLi')
+        let li = document.createElement('li')
+        li.innerText = this.value
+        ul.appendChild(li)
+        this.value = ''
+    }
+})
