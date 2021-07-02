@@ -1,0 +1,113 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(211, 211, 211);
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3em;
+    padding: 1em;
+    text-align: center;
+}
+ol, ul {
+    text-align: left;
+}
+h1 {
+    text-align: center;
+    margin: 0 auto;
+}
+/* TABLE */
+.table-cont{
+    border-collapse: collapse;
+    margin: 0 25px;
+    font-size: 1em;
+    min-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 10px black;
+    overflow: hidden;
+
+}
+.table-cont thead{
+    background-color: teal;
+    color: white;
+}
+
+
+.table-cont tr td{
+    border-bottom: 1px dotted #000;
+}
+.table-cont td{
+    border: 1px rgb(102, 161, 102);
+    border-style:  dotted solid;
+
+    }
+.table-cont tr:nth-of-type(even){
+    background-color: rgb(231, 231, 231);
+}
+
+/* a links */
+a {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+}
+.first-a{
+    color: white;
+}
+.second-a{
+    color: black;
+}
+.third-a{
+    color: rgb(197, 85, 85);
+}
+.fourth-a{
+    color: rgb(114, 211, 166);
+}
+/* IMG and A in table */
+img{
+    max-height: 75px;
+}
+
+
+/* MARGIN PARAGHRAPH */
+p {
+    margin: 5px;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    color: white;
+}
+.contacts{
+    display: flex;
+    justify-content: space-around;
+    width: 17%;
+}
+.contacts a {
+    color: rgb(255, 146, 146);
+
+}
+
+
+/* border */
+.border {
+    border: 1px solid black;
+}
+
+/* FONT SIZE */
+.fonts {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.hide{
+    display: none;
+}
