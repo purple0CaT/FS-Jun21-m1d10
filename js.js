@@ -179,3 +179,12 @@ function emptyLi(){
         li.remove()
     }
 }
+
+console.log("\n <==  Alert url ==> \n")
+
+let alertPop = document.querySelectorAll('a')
+for( let alr of alertPop){
+    alr.addEventListener('mouseover', ()=>{
+        console.log(alr.href)
+    })
+}
