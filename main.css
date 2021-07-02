@@ -118,3 +118,7 @@ footer{
 .hide{
     display: none;
 }
+
+.test{
+background-color: rgb(127, 127, 127);
+}

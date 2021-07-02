@@ -93,17 +93,21 @@ console.log("\n <==  Container ==> \n")
 const container = document.getElementById('container')
 console.log(container)
 
+
 console.log("\n <==  Get all td ==> \n")
 
 const allTd = document.getElementsByTagName('td')
 console.log(allTd)
 
+
 console.log("\n <==  CICLE PRINT ==> \n")
+
 function printTd(){
     for(let print of allTd){
         print.innerText = "Text"
     }
 }
+
 
 console.log("\n <==  HEADER CHANGER==> \n")
 
@@ -116,4 +120,26 @@ document.querySelector('.headerCh').addEventListener('keypress', function (e) {
 })
 
 
+console.log("\n <==  Add rows==> \n")
 
+function addRow(){
+    const table = document.getElementById('body')
+    console.log(table)
+    let row = document.createElement('tr')
+
+    for( i =0; i<=4; i++){
+    let colums = document.createElement('td')
+    colums.textContent = 'text'
+    row.appendChild(colums)
+}
+    table.append(row)
+}
+
+console.log("\n <==  Add class==> \n")
+
+function addClass(){
+    let rows = document.querySelectorAll('tr')
+    for(let ich of rows){
+        ich.classList.add('test')
+    }
+}
