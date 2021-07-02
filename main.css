@@ -122,3 +122,8 @@ footer{
 .test{
 background-color: rgb(127, 127, 127);
 }
+
+.hideTable{
+    display: none;
+    transition: 1s;
+}

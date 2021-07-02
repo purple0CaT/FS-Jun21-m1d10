@@ -195,3 +195,9 @@ function hideIMG(){
         im.style.display = 'none'
     }
 }
+
+// hide table
+function hideTable(){
+    let table = document.querySelector(".table-cont")
+    table.classList.toggle('hideTable')
+}
