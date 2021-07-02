@@ -143,3 +143,14 @@ function addClass(){
         ich.classList.add('test')
     }
 }
+
+console.log("\n <==  Add link==> \n")
+
+function addLink(){
+    const allLinks = document.querySelectorAll('td a')
+    for( let ich of allLinks){
+        ich.style.backgroundColor = "rgb(197, 85, 85)"
+    }
+}
+
+console.log("\n <==  Add link==> \n")
