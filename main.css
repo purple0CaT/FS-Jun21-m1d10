@@ -76,6 +76,14 @@ img{
 p {
     margin: 5px;
 }
+
+/* BUTTON */
+button, input {
+    margin: 0.5em auto;
+    border: 1px solid black;
+    border-radius: 3px;
+
+}
 /* FOOTER */
 footer{
     display: flex;

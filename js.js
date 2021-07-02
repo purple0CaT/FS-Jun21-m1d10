@@ -84,3 +84,36 @@ function sumCompare(a,b){
     }
 }
 sumCompare(shortArr, longArr)
+
+
+// DOM TASKS 
+
+console.log("\n <==  Container ==> \n")
+
+const container = document.getElementById('container')
+console.log(container)
+
+console.log("\n <==  Get all td ==> \n")
+
+const allTd = document.getElementsByTagName('td')
+console.log(allTd)
+
+console.log("\n <==  CICLE PRINT ==> \n")
+function printTd(){
+    for(let print of allTd){
+        print.innerText = "Text"
+    }
+}
+
+console.log("\n <==  HEADER CHANGER==> \n")
+
+document.querySelector('.headerCh').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        let header = document.getElementsByTagName('h1')
+        header[0].innerText = this.value
+        this.value = ''
+    }
+})
+
+
+
