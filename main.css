@@ -88,8 +88,7 @@ footer{
 }
 .contacts{
     display: flex;
-    justify-content: space-around;
-    width: 17%;
+    justify-content: space-between;
 }
 .contacts a {
     color: rgb(255, 146, 146);
